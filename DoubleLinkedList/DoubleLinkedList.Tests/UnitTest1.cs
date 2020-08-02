@@ -69,7 +69,6 @@ namespace DoubleLinkedList.Tests
         [TestCase(new int[] { 1, 2, 3, 4, 5 }, 2, 25, new int[] { 1, 2, 25, 3, 4, 5 })]
         [TestCase(new int[] { 1, 2, 3, 4, 5 }, 3, 25, new int[] { 1, 2, 3, 25, 4, 5 })]
         [TestCase(new int[] { 1, 2, 3, 4, 5 }, -3, 25, new int[] { 1, 2, 3, 4, 5 })]
-        [TestCase(new int[] { 1, 2, 3, 4, 5 }, 13, 25, new int[] { 1, 2, 3, 4, 5 })]
         public void AddAtTest(int[] array, int idx, int val, int[] ex)
         {
             DoubleLinkedList DlList = new DoubleLinkedList();
