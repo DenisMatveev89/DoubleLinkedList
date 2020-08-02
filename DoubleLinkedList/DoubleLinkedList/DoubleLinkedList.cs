@@ -71,7 +71,8 @@ namespace DoubleLinkedList
             }
             _length += array.Length;
         }
-        public void AddAt(int index, int item) //вставка по указанному индексу
+        // Вставка элемента по указанному индексу.
+        public void AddAt(int index, int item)
         {
             if (index < 0)
             {
@@ -99,6 +100,7 @@ namespace DoubleLinkedList
                 idx++;
             }
         }
+        // Вставка массива по указанному индексу.
         public void AddAt(int index, int[] array)
         {
             if (index < 0 || index > _count)
@@ -116,11 +118,13 @@ namespace DoubleLinkedList
             }
             _length += array.Length;
         }
-        public int GetSize() //- узнать кол-во элементов в списке
+        // Узнать кол-во элементов в списке.
+        public int GetSize() 
         {
             return _length;
         }
-        public void Set(int index, int value) //- поменять значение элемента с указанным индексом
+        // Поменять значение элемента с указанным индексом.
+        public void Set(int index, int value) 
         {
             if (index < 0 || index > _count)
             {
@@ -151,7 +155,8 @@ namespace DoubleLinkedList
                 }
             }
         }
-        public void RemoveFirst() //- удаление первого элемента
+        // Удаление первого элемента.
+        public void RemoveFirst() 
         {
             if (Head == null || _count < 1)
             {
@@ -160,7 +165,8 @@ namespace DoubleLinkedList
             Head = Head.Next;
             _count--;
         }
-        public void RemoveLast() //- удаление последнего элемента
+        // Удаление последнего элемента.
+        public void RemoveLast() 
         {
             if (Tail == null || _count <= 1)
             {
@@ -170,7 +176,8 @@ namespace DoubleLinkedList
             Tail.Next = null;
             _count--;
         }
-        public void RemoveAt(int index) //- удаление по индексу
+        // Удаление по индексу.
+        public void RemoveAt(int index) 
         {
             if (index < 0 || index > _length)
             {
@@ -219,7 +226,8 @@ namespace DoubleLinkedList
             }
 
         }
-        public void RemoveAll(int value) //- удалить все элементы, равные val
+        // Удалить все элементы, равные val.
+        public void RemoveAll(int value) 
         {
             if (Head == null)
             {
@@ -255,7 +263,8 @@ namespace DoubleLinkedList
                 currentNode = currentNode.Next;
             }
         }
-        public bool Contains(int value) //- проверка, есть ли элемент в списке
+        // Проверка, есть ли элемент в списке.
+        public bool Contains(int value) 
         {
             DNode currentNode = Head;
             if (_count < 100000)
@@ -279,7 +288,8 @@ namespace DoubleLinkedList
             }
             return false;
         }
-        public int IndexOf(int value) //- вернёт индекс первого найденного элемента, равного val(или -1, если элементов с таким значением в списке
+        // Вернёт индекс первого найденного элемента, равного val(или -1, если элементов с таким значением в списке.
+        public int IndexOf(int value) 
         {
             _firstFound = 0;
             if (Head == null)
@@ -292,7 +302,8 @@ namespace DoubleLinkedList
             }
             return -1;
         }
-        public int GetFirst() //- вернёт значение первого элемента списка
+        // Вернёт значение первого элемента списка.
+        public int GetFirst() 
         {
             if (Head == null)
             {
@@ -300,7 +311,8 @@ namespace DoubleLinkedList
             }
             return Head.Value;
         }
-        public int GetLast() //- вернёт значение последнего элемента списка
+        // Вернёт значение последнего элемента списка.
+        public int GetLast() 
         {
             if (Head == null)
             {
@@ -308,8 +320,8 @@ namespace DoubleLinkedList
             }
             return Tail.Value;
         }
-
-        public int Get(int index) //- вернёт значение элемента списка c указанным индексом
+        // Вернёт значение элемента списка c указанным индексом.
+        public int Get(int index) 
         {
             if (Head == null)
             {
@@ -347,6 +359,7 @@ namespace DoubleLinkedList
             }
             return 0;
         }
+        // Реверс.
         public void Reverse()
         {
             if (Head == null)
@@ -367,7 +380,8 @@ namespace DoubleLinkedList
                 Head = temp.Prev;
             }
         }
-        public int Max() //- поиск значения максимального элемента
+        // Поиск значения максимального элемента.
+        public int Max() 
         {
             if (Head == null)
             {
@@ -388,7 +402,8 @@ namespace DoubleLinkedList
             }
             return max;
         }
-        public int Min() //- поиск значения минммального элемента
+        // Поиск значения минммального элемента.
+        public int Min() 
         {
             if (Head == null)
             {
@@ -410,7 +425,8 @@ namespace DoubleLinkedList
             }
             return min;
         }
-        public int IndexOfMax() //- поиск индекс максимального элемента
+        // Поиск индекса максимального элемента.
+        public int IndexOfMax() 
         {
             if (Head == null)
             {
@@ -420,7 +436,8 @@ namespace DoubleLinkedList
             Max();
             return _indexMax;
         }
-        public int IndexOfMin() //- поиск индекс минимального элемента
+        // Поиск индекса минимального элемента.
+        public int IndexOfMin() 
         {
             if (Head == null)
             {
@@ -520,7 +537,8 @@ namespace DoubleLinkedList
                 return second;
             }
         }
-        public int[] ToArray() //- вернёт хранимые данные в виде массива
+        // Вернёт хранимые данные в виде массива.
+        public int[] ToArray() 
         {
             int[] newArray = new int[_count];
             DNode newNode = Head;
@@ -533,6 +551,7 @@ namespace DoubleLinkedList
             }
             return newArray;
         }
+        // Вывод списка в консоль.
         public void PrintArrayList()
         {
             int[] array = ToArray();
@@ -542,6 +561,7 @@ namespace DoubleLinkedList
                 Console.Write(array[i] + " ");
             }
         }
+        // Очистка списка.
         public void Clear()
         {
             Head = null;
