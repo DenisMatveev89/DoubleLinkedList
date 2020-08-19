@@ -11,3 +11,16 @@ C:\Users\Den\Desktop\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\obj\Debu
 C:\Users\Den\Desktop\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedListProject.dll
 C:\Users\Den\Desktop\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedListProject.pdb
 C:\Users\Den\Desktop\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedListProject.genruntimeconfig.cache
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedListProject.exe
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedListProject.deps.json
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedListProject.runtimeconfig.json
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedListProject.runtimeconfig.dev.json
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedListProject.dll
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedListProject.pdb
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedListProject.csprojAssemblyReference.cache
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedListProject.AssemblyInfoInputs.cache
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedListProject.AssemblyInfo.cs
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedListProject.csproj.CoreCompileInputs.cache
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedListProject.dll
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedListProject.pdb
+C:\Users\djmat\OneDrive\Рабочий стол\DoubleLinkedList\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedListProject.genruntimeconfig.cache

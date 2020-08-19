@@ -14,15 +14,6 @@ namespace DoubleLinkedList
         private int _indexMin;
         private int _length = 0;
         public DoubleLinkedList() { }
-        public DoubleLinkedList(int[] array)
-        {
-            for (int i = 0; i < array.Length; i++)
-            {
-                AddLast(array[i]);
-                _count++;
-            }
-            _length = array.Length;
-        }
         public DoubleLinkedList(int value) { }
         public void AddLast(int value)
         {
@@ -40,14 +31,14 @@ namespace DoubleLinkedList
             _count++;
             _length++;
         }
-        public void AddLast(int[] array)
+        public void AddLast(int[] values)
         {
-            DNode node = new DNode(array);
-            for (int i = 0; i < array.Length; i++)
+            DNode node = new DNode();
+            for (int i = 0; i < values.Length; i++)
             {
-                AddLast(array[i]);
+                AddLast(values[i]);
             }
-            _length += array.Length;
+            _length += values.Length;
         }
         public void AddFirst(int value)
         {
@@ -62,14 +53,14 @@ namespace DoubleLinkedList
             _count++;
             _length += _count;
         }
-        public void AddFirst(int[] array)
+        public void AddFirst(int[] values)
         {
-            DNode node = new DNode(array);
-            for (int i = array.Length - 1; i >= 0; i--)
+            DNode node = new DNode();
+            for (int i = values.Length - 1; i >= 0; i--)
             {
-                AddFirst(array[i]);
+                AddFirst(values[i]);
             }
-            _length += array.Length;
+            _length += values.Length;
         }
         // Вставка элемента по указанному индексу.
         public void AddAt(int index, int item)
@@ -101,7 +92,7 @@ namespace DoubleLinkedList
             }
         }
         // Вставка массива по указанному индексу.
-        public void AddAt(int index, int[] array)
+        public void AddAt(int index, int[] values)
         {
             if (index < 0 || index > _count)
             {
@@ -109,14 +100,14 @@ namespace DoubleLinkedList
             }
             else if (index == 0)
             {
-                AddFirst(array);
+                AddFirst(values);
                 return;
             }
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < values.Length; i++)
             {
-                AddAt(index + i, array[i]);
+                AddAt(index + i, values[i]);
             }
-            _length += array.Length;
+            _length += values.Length;
         }
         // Узнать кол-во элементов в списке.
         public int GetSize() 

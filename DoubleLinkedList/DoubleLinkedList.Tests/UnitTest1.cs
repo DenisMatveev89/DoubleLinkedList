@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System;
+using System.Collections.Generic;
 
 namespace DoubleLinkedList.Tests
 {
@@ -306,18 +307,60 @@ namespace DoubleLinkedList.Tests
             }
         }
 
-        [TestCase(100000)]
-        public void GetSizeTest(int ex)
+        [TestCase(1, 100000)]
+        [TestCase(2, 100)]
+        [TestCase(3, 1)]
+        [TestCase(4, 5)]
+        [TestCase(5, 0)]
+        public void GetSizeTest(int count, int ex)
         {
-            DoubleLinkedList DlList = new DoubleLinkedList();
-
-
-
-            for (int i = 0; i < 100000; i++)
+            DoubleLinkedList DlListResult = new DoubleLinkedList();
+            switch (count)
             {
-                DlList.AddLast(i);
+                case 1:
+                    DoubleLinkedList DlList = new DoubleLinkedList();
+                    for (int i = 0; i < 100000; i++)
+                    {
+                        DlList.AddLast(i);
+                    }
+                    DlListResult = DlList;
+                    break;
+                case 2:
+                    DoubleLinkedList DlList2 = new DoubleLinkedList();
+                    for (int i = 0; i < 100; i++)
+                        {
+                            DlList2.AddLast(i);
+                        }
+                    DlListResult = DlList2;
+                    break;
+                case 3:
+                        DoubleLinkedList DlList3 = new DoubleLinkedList();
+                        for (int i = 0; i < 1; i++)
+                        {
+                            DlList3.AddLast(i);
+                        }
+                    DlListResult = DlList3;
+                    break;
+                case 4:
+                        DoubleLinkedList DlList4 = new DoubleLinkedList();
+                        for (int i = 0; i < 5; i++)
+                        {
+                            DlList4.AddLast(i);
+                        }
+                    DlListResult = DlList4;
+                    break;
+                case 5:
+                    
+                        DoubleLinkedList DlList5 = new DoubleLinkedList();
+                        for (int i = 0; i < 0; i++)
+                        {
+                            DlList5.AddLast(i);
+                        }
+                    DlListResult = DlList5;
+                    break;
             }
-            int actual = DlList.GetSize();
+            
+            int actual = DlListResult.GetSize();
             Assert.AreEqual(ex, actual);
 
         }
